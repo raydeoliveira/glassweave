@@ -1,0 +1,17 @@
+# GlassWeave (`glassweave`)
+
+> Cross-OS eye-tracked glasses-free 3D CLI and MCP server for Samsung Odyssey 3D, Acer SpatialLabs, ASUS Spatial Vision, and Lenovo ThinkVision 27 3D.
+
+## Capabilities
+- **4-Vendor Lens Switching (`switch`, `restore`, `vendors`)**: Clean-room VESA DDC/CI I2C (`0x37`, `0x6E`/`0x6F`, `0x51`) and USB-HID lens mode switching (`2d`/`3d`) with user-overridable `<config-dir>/vendors.json`, symlink-guarded atomic snapshots, non-TTY `--yes` enforcement, and 15s `sigaction` auto-revert back to `2d`.
+- **UVC Eye Tracking (`track`)**: `AVFoundation` + `Vision` `VNDetectFaceLandmarksRequest` live pupil tracking on macOS (Linux V4L2 guarded via `CGlassWeaveLinux`), plus deterministic `--eye-coords` JSON/CSV/JSONL, `GLASSWEAVE_UVC_TRACE`, and `--fixture` (`sweep`, `lost-face` hold+fade, `center`).
+- **Eye-Tracked Lenticular Shaders (`weave`, `calibrate`)**: Runtime-compiled Metal slanted subpixel lenticular, row/column interlaced, checkerboard, Full-SBS, Half-SBS, TAB, and Dubois anaglyph compute kernels with dynamic eye-tracking phase shift, matching GLSL 450 (`shaders/lenticular.glsl`) and WGSL (`shaders/lenticular.wgsl`) shaders, and CPU reference kernel parity.
+- **AI-Agent Native (`--describe`, `--json`, `mcp`)**: Deterministic exit codes (`0,1,2,3,4,5,130`), `--from-json -` UNIX composability, and stdio JSON-RPC 2.0 `glassweave mcp`.
+
+## Install
+- Homebrew: `brew install raydeoliveira/tap/glassweave`
+- Agent Skill: `SKILL.md` in repository root (`skills.sh` compatible)
+- MCP Manifest: `server.json` (`io.github.raydeoliveira/glassweave`)
+
+## Pricing
+- Free forever: `probe`, `vendors`, `calibrate`, `restore`, `track`, `--dry-run`, `weave --out-layout dubois-anaglyph`, and read-only MCP tools.

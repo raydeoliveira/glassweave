@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.raydeoliveira/glassweave",
+  "title": "GlassWeave",
+  "description": "Eye-tracked glasses-free 3D display CLI & MCP server with DDC/CI switching and shaders.",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/raydeoliveira/glassweave",
+  "repository": {
+    "url": "https://github.com/raydeoliveira/glassweave",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/raydeoliveira/glassweave/releases/download/v0.1.0/glassweave-0.1.0-macos-arm64.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "421e034a571fade8c7fee44ef96cc6a342abe72f6336dd0ee44cf4edf75a55da",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GLASSWEAVE_LICENSE_KEY",
+          "description": "Optional Polar.sh Pro license key unlocking 3D lens writes and GPU lenticular weaving.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
