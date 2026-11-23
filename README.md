@@ -1,5 +1,7 @@
 # GlassWeave
 
+> **Product Hub:** [raymonddeoliveira.com/software](https://www.raymonddeoliveira.com/software#glassweave) · **Buy GlassWeave Pro ($29):** [Polar Checkout](https://buy.polar.sh/polar_cl_RVXA4XqANyC7aXm12WybluTFQ7u2cxvoClgln2MWxuk) · **Complete 4-CLI Bundle ($49, save $57):** [Bundle Checkout](https://buy.polar.sh/polar_cl_KTtCY3iQC4bzjqp93aC6LCog8UZqzZzuDgkAs3BvF74) · **Verified MCP:** [Glama](https://glama.ai/mcp/servers/raydeoliveira/glassweave) · **Free Core:** `brew tap raydeoliveira/tap && brew install glassweave`
+
 Cross-OS eye-tracked glasses-free 3D CLI and stdio MCP server for Samsung Odyssey 3D, Acer SpatialLabs, ASUS Spatial Vision, and Lenovo ThinkVision 27 3D (`869,584` bytes / `849 KB` stripped macOS `arm64` binary, zero external runtime dependencies).
 
 ## What It Does and Does Not Do
