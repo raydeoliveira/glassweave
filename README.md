@@ -34,6 +34,12 @@ rm -rf ~/.config/glassweave
 
 ## Quick Start (Human + `--json` Agent Usage)
 
+With GlassWeave installed, add the [agent instructions](SKILL.md) to your project for display profile lookup and lens-switch previews.
+
+```sh
+npx skills add raydeoliveira/glassweave
+```
+
 ```bash
 $ glassweave --version
 glassweave 0.1.0 (commercial, arm64)

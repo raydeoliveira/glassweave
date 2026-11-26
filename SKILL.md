@@ -1,7 +1,7 @@
 ---
 name: glassweave
 description: >-
-  Cross-OS eye-tracked glasses-free 3D CLI and MCP server for Samsung Odyssey 3D,
+  Eye-tracked glasses-free 3D CLI and MCP server with optical profiles for Samsung Odyssey 3D,
   Acer SpatialLabs, ASUS Spatial Vision, and Lenovo ThinkVision 27 3D. Use when
   probing 3D monitors, switching 2D/3D lenticular lenses over DDC/CI or USB-HID with
   15s auto-revert, reading UVC eye-tracking coordinates, calibrating optical profiles,
@@ -11,6 +11,9 @@ description: >-
 # Skill: GlassWeave (`glassweave`)
 
 ## Install & Discovery
+
+The v0.1.0 CLI and MCP bundle run on Apple Silicon with macOS 14 or later. Physical lens controls depend on the monitor and its firmware.
+
 ```bash
 brew install raydeoliveira/tap/glassweave
 glassweave --describe
