@@ -16,15 +16,16 @@ Cross-OS eye-tracked glasses-free 3D CLI and stdio MCP server for Samsung Odysse
 
 ## Install & Uninstall
 
-```bash
-# Build from source (Commercial or OSS edition)
-cd projects/glassweave
+The Homebrew package runs on Apple Silicon with macOS Sonoma (14) or later. Inspect the simulated Samsung Odyssey 3D display and camera.
 
-# Or via Homebrew tap:
+```sh
 brew install raydeoliveira/tap/glassweave
+glassweave probe --fixture samsung-odyssey-3d --json
 ```
 
-To uninstall:
+The release page provides the macOS archive, MCP bundle and SHA-256 checksums. [Version 0.1.0 downloads](https://github.com/raydeoliveira/glassweave/releases/tag/v0.1.0)
+
+### Uninstall
 
 ```bash
 brew uninstall glassweave
